@@ -19,7 +19,7 @@ add map description here
 
 ```leaflet  
 id: World Map
-image: beeb/resources/World Map.jpg 
+image: Example World/resources/World Map.jpg
 bounds: [[0,0], [3083, 4766]] ### Size of the map in px Height_y, Width_x. Ignore 0,0
 height: 1000px ### Size of the leaflet embed in px on your screen  
 width: 100% ### Size of the leaflet embed in your note  
