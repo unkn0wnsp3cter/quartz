@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: github.com/unkn0wnsp3cter/quartz.git
+  baseUrl: gitlab.com/unkn0wnsp3cter/quartz
   ignorePatterns:
     - private
     - templates
