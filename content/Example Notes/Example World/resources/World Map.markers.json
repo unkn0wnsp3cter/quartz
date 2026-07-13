@@ -1,0 +1,38 @@
+{
+  "size": {
+    "w": 4766,
+    "h": 3083
+  },
+  "layers": [
+    {
+      "id": "default",
+      "name": "Default",
+      "visible": true,
+      "locked": false
+    }
+  ],
+  "markers": [],
+  "bases": [
+    {
+      "path": "Example Notes/Example World/resources/World Map.jpg"
+    }
+  ],
+  "overlays": [],
+  "activeBase": "Example Notes/Example World/resources/World Map.jpg",
+  "measurement": {
+    "scales": {},
+    "customUnitPxPerUnit": {},
+    "travelTimePresetIds": [],
+    "travelDaysEnabled": false,
+    "displayUnit": "km"
+  },
+  "pinSizeOverrides": {},
+  "grids": [],
+  "panClamp": true,
+  "drawLayers": [],
+  "drawings": [],
+  "secondScreen": {
+    "showGrids": true
+  },
+  "textLayers": []
+}

@@ -1,36 +1,18 @@
----
-map_height_y: 4766
-map_width_x: 3083
-scale_pixels: 850
-scale_pixels_range: 500
-mapCalc1: 0.5882352941176471
----
-add map description here
-> [!NOTE]- Quick Calculator  
-> Map Height in Pixels: `INPUT[number:map_height_y]`  
-> Map Width in Pixels: `INPUT[number:map_width_x]`  
-> lat: `VIEW[{map_height_y} / 2][math]`  
-> long: `VIEW[{map_width_x} / 2][math]`  
-> How Many Pixels In Scale: `INPUT[number:scale_pixels]`  
-> How Many Units in Scale: `INPUT[number:scale_pixels_range]`  
-> Scale: `VIEW[1/({scale_pixels}/{scale_pixels_range})][math:mapCalc1]`
 
-
-
-```leaflet  
-id: World Map
-image: Example World/resources/World Map.jpg
-bounds: [[0,0], [3083, 4766]] ### Size of the map in px Height_y, Width_x. Ignore 0,0
-height: 1000px ### Size of the leaflet embed in px on your screen  
-width: 100% ### Size of the leaflet embed in your note  
-lat: 2383 ### To center the map, make this half of the map height.  
-long: 1541.5 ### To center the map, make this half of the map width.  
-minZoom: -1.5 ### Controls how far away from the map you can zoom out. Hover over the target icon to see the current level.  
-maxZoom: 2 ### Controls how far towards the map you can zoom in. Hover over the target icon to see the current level.  
-defaultZoom: -0.5 ### Sets the default zoom level when the map loads. Hover over the target icon to see the current level.  
-zoomDelta: 0.5 ### Adjust how much the zoom changes when you zoom in or out.  
-unit: mi ### The value displayed when measuring so you know what type of unit is being measure.  
-scale: 0.5882352941176471 ### Real units/px (resolution) of your map  
-recenter: false  
-darkmode: true ### marker
+```zoommap
+imageBases:
+  - path: Example Notes/Example World/resources/World Map.jpg
+markers: Example Notes/Example World/resources/World Map.markers.json
+markerLayers:
+  - Default
+minZoom: 0.25
+maxZoom: 8
+wrap: false
+responsive: false
+width: 100%
+height: 480px
+resizable: false
+resizeHandle: native
+render: dom
+id: map-mrjb5fhh
 ```
